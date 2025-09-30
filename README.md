@@ -1,1 +1,218 @@
-# .html
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TrustGlobalBank (TGB) — Educação & Tecnologia</title>
+  <meta name="description" content="TrustGlobalBank (TGB) — token com propósito: financiar escolas de tecnologia, arte e marketing para crianças em vulnerabilidade." />
+  <meta property="og:title" content="TrustGlobalBank (TGB)" />
+  <meta property="og:description" content="Token com propósito: educação de qualidade para crianças. Saiba como comprar, whitepaper e roadmap." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0b1226" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b1226; --card:#0f1a35; --accent:#00d1b2; --muted:#9aa6c0; --glass: rgba(255,255,255,0.03);
+      --max-width:1100px; font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#06102a 0%, #08142b 60%);color:#e6eef8;-webkit-font-smoothing:antialiased}
+    .container{max-width:var(--max-width);margin:36px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#6be7ff);display:grid;place-items:center;font-weight:800;color:#062033}
+    .brand h1{margin:0;font-size:18px}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px}
+    .hero{display:flex;gap:24px;margin-top:28px;align-items:center}
+    .hero-left{flex:1}
+    .tag{display:inline-block;background:var(--glass);padding:6px 10px;border-radius:999px;color:var(--accent);font-weight:600;font-size:13px}
+    h2{margin:10px 0 6px 0;font-size:28px}
+    p.lead{color:var(--muted);margin:0 0 18px 0}
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{background:var(--accent);color:#062033;padding:10px 14px;border-radius:10px;border:none;font-weight:700;cursor:pointer}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:14px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    .market{display:grid;grid-template-columns:1fr 280px;gap:20px;margin-top:18px}
+    .token-info{display:flex;flex-direction:column;gap:12px}
+    .info-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+    .info-item{background:rgba(255,255,255,0.02);padding:10px;border-radius:8px}
+    aside .card{position:sticky;top:28px}
+    section.whitepaper{margin-top:26px}
+    .whitepaper h3{margin-top:0}
+    .wp-section{background:rgba(0,0,0,0.25);padding:14px;border-radius:10px;margin-bottom:10px}
+    pre{white-space:pre-wrap;font-family:inherit}
+    footer{margin-top:40px;color:var(--muted);font-size:14px;padding:18px 0;border-top:1px solid rgba(255,255,255,0.03);display:flex;justify-content:space-between;align-items:center}
+    .socials a{margin-right:12px;color:var(--muted);text-decoration:none}
+    .copy{display:inline-flex;align-items:center;gap:8px}
+    code{background:rgba(255,255,255,0.02);padding:6px;border-radius:6px}
+    @media (max-width:900px){.hero{flex-direction:column}.market{grid-template-columns:1fr}.logo{width:48px;height:48px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden> TGB </div>
+        <div>
+          <h1>TrustGlobalBank <small style="color:var(--muted);font-weight:600;display:block">TGB — Token com propósito</small></h1>
+        </div>
+      </div>
+      <nav aria-label="navegação principal">
+        <a href="#about">Sobre</a>
+        <a href="#whitepaper">Whitepaper</a>
+        <a href="#buy">Comprar</a>
+        <a href="#roadmap">Roadmap</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-left">
+          <span class="tag">Token: TGB • Contrato: FZYS1CR4ryfe6kNkeL72Wr5haH7TwpxWxALTe9fXpump</span>
+          <h2>Construindo escolas de tecnologia, arte e marketing para crianças</h2>
+          <p class="lead">TrustGlobalBank (TGB) é um token criado para financiar uma escola de qualidade que ofereça cursos de tecnologia, arte, marketing e outras habilidades para crianças sem recursos. Parte das receitas serão destinadas ao fundo educacional.</p>
+          <div class="cta-row">
+            <a class="btn" id="buyLink" href="https://pump.fun/coin/FZYS1CR4ryfe6kNkeL72Wr5haH7TwpxWxALTe9fXpump" target="_blank" rel="noopener">Comprar na pump.fun</a>
+            <button class="btn ghost" id="copyContract">Copiar contrato</button>
+            <a class="btn ghost" href="#whitepaper">Ver whitepaper</a>
+          </div>
+          <p style="margin-top:12px;color:var(--muted)">Siga-nos: <a href="https://x.com/TrustGlobalBank?t=vJ4_m4xVByzMuTiarrlalA&s=09" target="_blank" rel="noopener">X / Twitter</a> • <a href="https://t.me/TGBoficial1" target="_blank" rel="noopener">Telegrama</a></p>
+        </div>
+        <aside style="width:320px">
+          <div class="card">
+            <h4 style="margin:0 0 8px 0">Resumo rápido</h4>
+            <div class="token-info">
+              <div class="info-grid">
+                <div class="info-item"><strong>Nome</strong><div>TrustGlobalBank</div></div>
+                <div class="info-item"><strong>Símbolo</strong><div>TGB</div></div>
+                <div class="info-item"><strong>Contrato</strong><div style="word-break:break-word">FZYS1CR4ryfe6kNkeL72Wr5haH7TwpxWxALTe9fXpump</div></div>
+                <div class="info-item"><strong>Onde comprar</strong><div><a href="https://pump.fun/coin/FZYS1CR4ryfe6kNkeL72Wr5haH7TwpxWxALTe9fXpump" target="_blank" rel="noopener">pump.fun</a></div></div>
+              </div>
+              <div style="margin-top:10px;color:var(--muted);font-size:13px">Apoio direto a projetos educacionais e transparência nos repasses.</div>
+            </div>
+          </div>
+          <div style="height:12px"></div>
+          <div class="card">
+            <h4 style="margin:0 0 8px 0">Ações imediatas</h4>
+            <ul style="margin:0 0 0 18px;color:var(--muted)">
+              <li>Criar fundo educacional</li>
+              <li>Parcerias com instituições locais</li>
+              <li>Transparência trimestral</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+
+      <section id="about" class="card" style="margin-top:20px">
+        <h3>Sobre o projeto</h3>
+        <p style="color:var(--muted)">TrustGlobalBank nasceu da ideia de usar a tecnologia cripto para gerar recursos e criar oportunidades reais. Nossa missão é montar uma escola prática que ofereça às crianças cursos de tecnologia, arte, marketing e outras habilidades essenciais para o século XXI. Queremos combinar tokenomics simples, responsabilidade social e prestação de contas.</p>
+      </section>
+
+      <section id="whitepaper" class="whitepaper">
+        <h3>Whitepaper — Versão resumida</h3>
+        <div class="wp-section card">
+          <h4>Visão</h4>
+          <p style="color:var(--muted)">Criar um ecossistema onde a comunidade do token financie diretamente programas educacionais, com foco em habilidades digitais e criativas, para crianças em situação de vulnerabilidade.</p>
+        </div>
+
+        <div class="wp-section card">
+          <h4>Tokenomics (resumo)</h4>
+          <ul style="color:var(--muted)">
+            <li><strong>Nome:</strong> TrustGlobalBank (TGB)</li>
+            <li><strong>Símbolo:</strong> TGB</li>
+            <li><strong>Contrato:</strong> FZYS1CR4ryfe6kNkeL72Wr5haH7TwpxWxALTe9fXpump</li>
+            <li><strong>Onde comprar:</strong> pump.fun (link acima)</li>
+            <li><strong>Distribuição sugerida:</strong> Liquidez, Fundo Educacional, Desenvolvimento e Marketing — valores e % a definir oficialmente pela equipe.</li>
+          </ul>
+        </div>
+
+        <div class="wp-section card">
+          <h4>Roadmap (alto nível)</h4>
+          <ol style="color:var(--muted)">
+            <li>Q1 — Lançamento do token, site e canais (X, Telegram)</li>
+            <li>Q2 — Formação do fundo educacional e parcerias locais</li>
+            <li>Q3 — Piloto da escola (turma inicial) e relatórios de gastos</li>
+            <li>Q4 — Escala e transparência: auditoria parcial dos repasses</li>
+          </ol>
+        </div>
+
+        <div class="wp-section card">
+          <h4>Governança & Transparência</h4>
+          <p style="color:var(--muted)">Relatórios trimestrais sobre o uso dos recursos. Idealmente auditoria por parceiro independente e atualizações regulares no canal oficial do projeto.</p>
+        </div>
+
+        <div class="wp-section card">
+          <h4>Riscos & Aviso Legal</h4>
+          <p style="color:var(--muted)">Criptomoedas são investimentos de alto risco. Este site não constitui conselho financeiro. Os recursos destinados ao projeto devem ser geridos com governança clara e com comunicação aberta à comunidade.</p>
+        </div>
+
+        <div class="card">
+          <h4>Whitepaper completo</h4>
+          <p style="color:var(--muted)">Você pode baixar uma versão em texto do whitepaper com um clique — use o botão abaixo para gerar o arquivo localmente.</p>
+          <div style="display:flex;gap:10px">
+            <button class="btn" id="downloadWp">Baixar Whitepaper (TXT)</button>
+            <button class="btn ghost" id="shareWp">Gerar link de compartilhamento</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="buy" class="card" style="margin-top:18px">
+        <h3>Como comprar</h3>
+        <p style="color:var(--muted)">Atualmente o token está listado em <a href="https://pump.fun/coin/FZYS1CR4ryfe6kNkeL72Wr5haH7TwpxWxALTe9fXpump" target="_blank" rel="noopener">pump.fun</a>. Siga as instruções da plataforma escolhida e sempre verifique o contrato: <code>FZYS1CR4ryfe6kNkeL72Wr5haH7TwpxWxALTe9fXpump</code></p>
+      </section>
+
+      <section id="roadmap" class="card" style="margin-top:18px">
+        <h3>Roadmap detalhado</h3>
+        <p style="color:var(--muted)">(Visão estendida) — Preparar materiais pedagógicos, fechar parcerias com ONGs locais, estruturação administrativa e abertura de turmas específicas por região. Cronograma sujeito a ajustes.</p>
+      </section>
+
+    </main>
+
+    <footer>
+      <div>
+        <strong>TrustGlobalBank (TGB)</strong>
+        <div style="color:var(--muted)">Missão: educação, tecnologia e oportunidades.</div>
+      </div>
+      <div class="socials">
+        <a href="https://x.com/TrustGlobalBank?t=vJ4_m4xVByzMuTiarrlalA&s=09" target="_blank" rel="noopener">X / Twitter</a>
+        <a href="https://t.me/TGBoficial1" target="_blank" rel="noopener">Telegrama</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const contract = 'FZYS1CR4ryfe6kNkeL72Wr5haH7TwpxWxALTe9fXpump';
+    document.getElementById('copyContract').addEventListener('click', async ()=>{
+      try{
+        await navigator.clipboard.writeText(contract);
+        alert('Contrato copiado para a área de transferência!');
+      }catch(e){
+        prompt('Copie manualmente o contrato:', contract);
+      }
+    });
+
+    // Whitepaper content for download
+    const fullWpText = `TrustGlobalBank (TGB) - Whitepaper (Versão TXT)\n\n
+Visão:\nTrustGlobalBank nasceu com o objetivo de usar a tecnologia blockchain para gerar recursos e financiar educação de qualidade para crianças em situação de vulnerabilidade.\n\n
+Tokenomics (resumo):\n- Nome: TrustGlobalBank (TGB)\n- Símbolo: TGB\n- Contrato: ${contract}\n- Onde comprar: https://pump.fun/coin/FZYS1CR4ryfe6kNkeL72Wr5haH7TwpxWxALTe9fXpump\n\nDistribuição sugerida (a ser formalizada pela equipe):\n- Liquidez\n- Fundo Educacional\n- Desenvolvimento\n- Marketing\n\nRoadmap (alto nível):\nQ1 - Lançamento do token, site e canais oficiais.\nQ2 - Formação do fundo educacional e primeiras parcerias.\nQ3 - Piloto da escola com turmas iniciais.\nQ4 - Escala, auditoria parcial e relatórios públicos.\n\nGovernança e Transparência:\nRelatórios trimestrais sobre uso dos recursos; auditoria por parceiro independente recomendada.\n\nRiscos:\nCriptomoedas são investimentos de alto risco. Este documento não é conselho financeiro.\n\nContato:\nX / Twitter: https://x.com/TrustGlobalBank?t=vJ4_m4xVByzMuTiarrlalA&s=09\nTelegrama: https://t.me/TGBoficial1\n`;
+
+    document.getElementById('downloadWp').addEventListener('click', ()=>{
+      const blob = new Blob([fullWpText], {type: 'text/plain;charset=utf-8'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = 'TGB_whitepaper.txt';
+      document.body.appendChild(a); a.click(); a.remove();
+      URL.revokeObjectURL(url);
+    });
+
+    document.getElementById('shareWp').addEventListener('click', ()=>{
+      if(navigator.share){
+        navigator.share({title:'Whitepaper TGB',text:fullWpText});
+      }else{
+        alert('Compartilhamento não suportado no seu navegador. Você pode baixar o arquivo e enviar manualmente.');
+      }
+    });
+  </script>
+</body>
+</html>
