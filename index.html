@@ -2,216 +2,230 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>TrustGlobalBank (TGB) — Educação & Tecnologia</title>
-  <meta name="description" content="TrustGlobalBank (TGB) — token com propósito: financiar escolas de tecnologia, arte e marketing para crianças em vulnerabilidade." />
-  <meta property="og:title" content="TrustGlobalBank (TGB)" />
-  <meta property="og:description" content="Token com propósito: educação de qualidade para crianças. Saiba como comprar, whitepaper e roadmap." />
-  <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#0b1226" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TrustGlobalBank (TGB) — Token Solidário</title>
+  <meta name="description" content="TrustGlobalBank (TGB) — token com missão social: financiar uma escola de qualidade para crianças sem condições. Listado em PancakeSwap (BNB) e pump.fun (Solana)." />
   <style>
-    :root{
-      --bg:#0b1226; --card:#0f1a35; --accent:#00d1b2; --muted:#9aa6c0; --glass: rgba(255,255,255,0.03);
-      --max-width:1100px; font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-    }
-    *{box-sizing:border-box}
-    body{margin:0;background:linear-gradient(180deg,#06102a 0%, #08142b 60%);color:#e6eef8;-webkit-font-smoothing:antialiased}
-    .container{max-width:var(--max-width);margin:36px auto;padding:24px}
-    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
-    .brand{display:flex;align-items:center;gap:12px}
-    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#6be7ff);display:grid;place-items:center;font-weight:800;color:#062033}
-    .brand h1{margin:0;font-size:18px}
-    nav a{color:var(--muted);text-decoration:none;margin-left:18px}
-    .hero{display:flex;gap:24px;margin-top:28px;align-items:center}
-    .hero-left{flex:1}
-    .tag{display:inline-block;background:var(--glass);padding:6px 10px;border-radius:999px;color:var(--accent);font-weight:600;font-size:13px}
-    h2{margin:10px 0 6px 0;font-size:28px}
-    p.lead{color:var(--muted);margin:0 0 18px 0}
-    .cta-row{display:flex;gap:12px;flex-wrap:wrap}
-    .btn{background:var(--accent);color:#062033;padding:10px 14px;border-radius:10px;border:none;font-weight:700;cursor:pointer}
+    :root{--bg:#0b1020;--card:#0f1724;--accent:#00d1b2;--muted:#9aa4b2;--glass: rgba(255,255,255,0.03)}
+    *{box-sizing:border-box;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial}
+    body{margin:0;background:linear-gradient(180deg,#071028 0%, #051022 100%);color:#e6eef6;-webkit-font-smoothing:antialiased}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 24px;background:linear-gradient(90deg,rgba(255,255,255,0.02),transparent);backdrop-filter:blur(6px)}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#0066ff);display:flex;align-items:center;justify-content:center;font-weight:700;color:#052;box-shadow:0 6px 18px rgba(0,0,0,0.5)}
+    nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+    .container{max-width:1100px;margin:28px auto;padding:16px}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:24px;align-items:center}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:22px;border-radius:14px;box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+    h1{margin:0;font-size:28px}
+    p.lead{color:var(--muted);margin-top:8px}
+    .token-meta{margin-top:14px;display:flex;gap:8px;flex-wrap:wrap}
+    .meta-item{background:var(--glass);padding:10px 12px;border-radius:10px;font-weight:600;color:#cfeff0}
+    .actions{margin-top:18px;display:flex;gap:12px}
+    .btn{background:var(--accent);color:#022;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
     .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
-    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:14px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
-    .market{display:grid;grid-template-columns:1fr 280px;gap:20px;margin-top:18px}
-    .token-info{display:flex;flex-direction:column;gap:12px}
-    .info-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-    .info-item{background:rgba(255,255,255,0.02);padding:10px;border-radius:8px}
-    aside .card{position:sticky;top:28px}
-    section.whitepaper{margin-top:26px}
-    .whitepaper h3{margin-top:0}
-    .wp-section{background:rgba(0,0,0,0.25);padding:14px;border-radius:10px;margin-bottom:10px}
-    pre{white-space:pre-wrap;font-family:inherit}
-    footer{margin-top:40px;color:var(--muted);font-size:14px;padding:18px 0;border-top:1px solid rgba(255,255,255,0.03);display:flex;justify-content:space-between;align-items:center}
-    .socials a{margin-right:12px;color:var(--muted);text-decoration:none}
-    .copy{display:inline-flex;align-items:center;gap:8px}
-    code{background:rgba(255,255,255,0.02);padding:6px;border-radius:6px}
-    @media (max-width:900px){.hero{flex-direction:column}.market{grid-template-columns:1fr}.logo{width:48px;height:48px}}
+    .right .card{padding:18px}
+    .buy-list{display:flex;flex-direction:column;gap:12px}
+    .buy-row{display:flex;justify-content:space-between;align-items:center;padding:10px;border-radius:10px;background:rgba(255,255,255,0.02)}
+    .small{font-size:13px;color:var(--muted)}
+    section{margin-top:22px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .whitepaper{line-height:1.5;color:#dff7f0}
+    footer{margin-top:28px;padding:20px;text-align:center;color:var(--muted)}
+    .copy{cursor:pointer;padding:6px 10px;border-radius:8px;background:rgba(255,255,255,0.02);border:1px dashed rgba(255,255,255,0.03)}
+    @media (max-width:960px){.hero{grid-template-columns:1fr}.grid-3{grid-template-columns:1fr}.right{order:-1}}
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="brand">
-        <div class="logo" aria-hidden> TGB </div>
-        <div>
-          <h1>TrustGlobalBank <small style="color:var(--muted);font-weight:600;display:block">TGB — Token com propósito</small></h1>
+  <header>
+    <div class="brand">
+      <div class="logo">TGB</div>
+      <div>
+        <div style="font-weight:800">TrustGlobalBank</div>
+        <div class="small">Símbolo: <strong>TGB</strong> • Missão social</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#about">Sobre</a>
+      <a href="#whitepaper">Whitepaper</a>
+      <a href="#buy">Comprar</a>
+      <a href="#contact">Contato</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="hero">
+      <div class="card">
+        <h1>TrustGlobalBank (TGB)</h1>
+        <p class="lead">Token com propósito: financiar uma escola de qualidade para crianças sem condições financeiras, oferecendo aulas de tecnologia, arte, marketing e empreendedorismo.</p>
+
+        <div class="token-meta">
+          <div class="meta-item">Nome: TrustGlobalBank</div>
+          <div class="meta-item">Símbolo: TGB</div>
+          <div class="meta-item">Rede (BNB): contrato <span style="font-family:monospace;">0xF0d7D314cf86dddA3f957923a591A2b902c16c29</span></div>
+          <div class="meta-item">Pump.fun (Solana): <span style="font-family:monospace;">FZYS1CR4ryfe6kNkeL72Wr5haH7TwpxWxALTe9fXpump</span></div>
+        </div>
+
+        <div class="actions">
+          <a class="btn" id="buyPancake" href="https://pancakeswap.finance/swap?outputCurrency=0xF0d7D314cf86dddA3f957923a591A2b902c16c29" target="_blank" rel="noopener">Comprar na PancakeSwap (BNB)</a>
+          <a class="btn ghost" id="buyPump" href="https://pump.fun/coin/FZYS1CR4ryfe6kNkeL72Wr5haH7TwpxWxALTe9fXpump" target="_blank" rel="noopener">Ver na pump.fun (Solana)</a>
+        </div>
+
+        <div style="margin-top:14px;display:flex;gap:8px;align-items:center">
+          <div class="small">Contrato (BNB):</div>
+          <div class="copy" id="contractBNB">0xF0d7D314cf86dddA3f957923a591A2b902c16c29</div>
+          <button class="copy" id="copyBNB">Copiar</button>
+        </div>
+
+        <div style="margin-top:10px;display:flex;gap:10px;align-items:center">
+          <a href="https://x.com/TrustGlobalBank?t=vJ4_m4xVByzMuTiarrlalA&s=09" target="_blank" class="copy">Twitter / X</a>
+          <a href="https://t.me/TGBoficial1" target="_blank" class="copy">Telegram</a>
+        </div>
+
+      </div>
+
+      <div class="right card">
+        <h3 style="margin-top:0">Onde comprar</h3>
+        <div class="buy-list">
+          <div class="buy-row">
+            <div>
+              <div style="font-weight:700">PancakeSwap (BNB)</div>
+              <div class="small">Troque BNB por TGB na PancakeSwap</div>
+            </div>
+            <div><a class="btn" href="https://pancakeswap.finance/swap?outputCurrency=0xF0d7D314cf86dddA3f957923a591A2b902c16c29" target="_blank">Abrir</a></div>
+          </div>
+
+          <div class="buy-row">
+            <div>
+              <div style="font-weight:700">pump.fun (Solana)</div>
+              <div class="small">Página do token na pump.fun</div>
+            </div>
+            <div><a class="btn" href="https://pump.fun/coin/FZYS1CR4ryfe6kNkeL72Wr5haH7TwpxWxALTe9fXpump" target="_blank">Ver</a></div>
+          </div>
+
+        </div>
+
+        <hr style="border:none;border-top:1px solid rgba(255,255,255,0.03);margin:14px 0">
+        <div class="small">Segurança: confirme sempre o contrato antes de trocar tokens. Nós não somos consultoria financeira.</div>
+      </div>
+    </div>
+
+    <section id="about" class="card">
+      <h2>Missão e Objetivo</h2>
+      <p class="whitepaper">TrustGlobalBank nasceu com o objetivo de criar uma escola acessível e de alta qualidade para crianças em situação vulnerável. Nosso plano é financiar bolsas, infraestrutura e cursos nas áreas de tecnologia (programação, hardware), arte (música, desenho), marketing digital e empreendedorismo. A comunidade TGB participará das decisões através de governança simplificada e relatórios transparentes.</p>
+
+      <div style="margin-top:12px" class="grid-3">
+        <div class="card">
+          <h4>Transparência</h4>
+          <p class="small">Relatórios públicos sobre uso dos fundos e progresso dos projetos.</p>
+        </div>
+        <div class="card">
+          <h4>Educação prática</h4>
+          <p class="small">Cursos hands-on para preparar crianças para o mercado digital do século XXI.</p>
+        </div>
+        <div class="card">
+          <h4>Comunidade</h4>
+          <p class="small">A comunidade decide prioridades e apoia iniciativas locais.</p>
         </div>
       </div>
-      <nav aria-label="navegação principal">
-        <a href="#about">Sobre</a>
-        <a href="#whitepaper">Whitepaper</a>
-        <a href="#buy">Comprar</a>
-        <a href="#roadmap">Roadmap</a>
-      </nav>
-    </header>
+    </section>
 
-    <main>
-      <section class="hero">
-        <div class="hero-left">
-          <span class="tag">Token: TGB • Contrato: 0xF0d7D314cf86dddA3f957923a591A2b902c16c29</span>
-          <h2>Construindo escolas de tecnologia, arte e marketing para crianças</h2>
-          <p class="lead">TrustGlobalBank (TGB) é um token criado para financiar uma escola de qualidade que ofereça cursos de tecnologia, arte, marketing e outras habilidades para crianças sem recursos. Parte das receitas serão destinadas ao fundo educacional.</p>
-          <div class="cta-row">
-            <a class="btn" id="buyLink" href="https://pump.fun/coin/FZYS1CR4ryfe6kNkeL72Wr5haH7TwpxWxALTe9fXpump" target="_blank" rel="noopener">Comprar na pump.fun</a>
-            <button class="btn ghost" id="copyContract">Copiar contrato</button>
-            <a class="btn ghost" href="#whitepaper">Ver whitepaper</a>
-          </div>
-          <p style="margin-top:12px;color:var(--muted)">Siga-nos: <a href="https://x.com/TrustGlobalBank?t=vJ4_m4xVByzMuTiarrlalA&s=09" target="_blank" rel="noopener">X / Twitter</a> • <a href="https://t.me/TGBoficial1" target="_blank" rel="noopener">Telegrama</a></p>
-        </div>
-        <aside style="width:320px">
-          <div class="card">
-            <h4 style="margin:0 0 8px 0">Resumo rápido</h4>
-            <div class="token-info">
-              <div class="info-grid">
-                <div class="info-item"><strong>Nome</strong><div>TrustGlobalBank</div></div>
-                <div class="info-item"><strong>Símbolo</strong><div>TGB</div></div>
-                <div class="info-item"><strong>Contrato</strong><div style="word-break:break-word"></div>0xF0d7D314cf86dddA3f957923a591A2b902c16c29</div>
-                <div class="info-item"><strong>Onde comprar</strong><div><a href="https://pump.fun/coin/0xF0d7D314cf86dddA3f957923a591A2b902c16c29" target="_blank" rel="noopener">pump.fun</a></div></div>
-              </div>
-              <div style="margin-top:10px;color:var(--muted);font-size:13px">Apoio direto a projetos educacionais e transparência nos repasses.</div>
-            </div>
-          </div>
-          <div style="height:12px"></div>
-          <div class="card">
-            <h4 style="margin:0 0 8px 0">Ações imediatas</h4>
-            <ul style="margin:0 0 0 18px;color:var(--muted)">
-              <li>Criar fundo educacional</li>
-              <li>Parcerias com instituições locais</li>
-              <li>Transparência trimestral</li>
-            </ul>
-          </div>
-        </aside>
-      </section>
+    <section id="whitepaper" class="card">
+      <h2>Whitepaper — Resumo</h2>
+      <p class="whitepaper">Este whitepaper apresenta a visão do token TrustGlobalBank (TGB): modelo de lançamento, alocação inicial de tokens (ex.: liquidez, reserva para projetos sociais, equipe), plano de governança e roadmap para criação da escola. O foco é curto prazo: garantir liquidez inicial e parcerias; médio prazo: implementação dos cursos piloto; longo prazo: expansão e criação de uma organização que mantenha as operações e captação contínua de recursos.</p>
 
-      <section id="about" class="card" style="margin-top:20px">
-        <h3>Sobre o projeto</h3>
-        <p style="color:var(--muted)">TrustGlobalBank nasceu da ideia de usar a tecnologia cripto para gerar recursos e criar oportunidades reais. Nossa missão é montar uma escola prática que ofereça às crianças cursos de tecnologia, arte, marketing e outras habilidades essenciais para o século XXI. Queremos combinar tokenomics simples, responsabilidade social e prestação de contas.</p>
-      </section>
+      <h3 style="margin-top:10px">Download / PDF</h3>
+      <p class="small">Clique em "Gerar Whitepaper (PDF)" para criar um resumo em PDF que você pode baixar e distribuir.</p>
+      <div style="margin-top:10px">
+        <button class="btn" id="genPDF">Gerar Whitepaper (PDF)</button>
+        <a class="btn ghost" id="viewFull" href="#" onclick="document.getElementById('modalWP').style.display='block';return false;">Ver completo</a>
+      </div>
+    </section>
 
-      <section id="whitepaper" class="whitepaper">
-        <h3>Whitepaper — Versão resumida</h3>
-        <div class="wp-section card">
-          <h4>Visão</h4>
-          <p style="color:var(--muted)">Criar um ecossistema onde a comunidade do token financie diretamente programas educacionais, com foco em habilidades digitais e criativas, para crianças em situação de vulnerabilidade.</p>
-        </div>
+    <section id="buy" class="card">
+      <h2>Transparência de listagens</h2>
+      <p class="small">Atualmente o token está listado/visível em:</p>
+      <ul>
+        <li>PancakeSwap (rede BNB) — link de swap incluído.</li>
+        <li>pump.fun (rede Solana) — página do token incluída.</li>
+      </ul>
+    </section>
 
-        <div class="wp-section card">
-          <h4>Tokenomics (resumo)</h4>
-          <ul style="color:var(--muted)">
-            <li><strong>Nome:</strong> TrustGlobalBank (TGB)</li>
-            <li><strong>Símbolo:</strong> TGB</li>
-            <li><strong>Contrato:</strong> FZYS1CR4ryfe6kNkeL72Wr5haH7TwpxWxALTe9fXpump</li>
-            <li><strong>Onde comprar:</strong> pump.fun (link acima)</li>
-            <li><strong>Distribuição sugerida:</strong> Liquidez, Fundo Educacional, Desenvolvimento e Marketing — valores e % a definir oficialmente pela equipe.</li>
-          </ul>
-        </div>
+    <section id="contact" class="card">
+      <h2>Contatos & Redes</h2>
+      <p class="small">Siga e entre em contato conosco nas redes abaixo para receber anúncios oficiais e atualizações do projeto.</p>
+      <div style="display:flex;gap:12px;margin-top:8px;flex-wrap:wrap">
+        <a class="btn" href="https://x.com/TrustGlobalBank?t=vJ4_m4xVByzMuTiarrlalA&s=09" target="_blank">Twitter / X</a>
+        <a class="btn" href="https://t.me/TGBoficial1" target="_blank">Telegram</a>
+      </div>
 
-        <div class="wp-section card">
-          <h4>Roadmap (alto nível)</h4>
-          <ol style="color:var(--muted)">
-            <li>Q1 — Lançamento do token, site e canais (X, Telegram)</li>
-            <li>Q2 — Formação do fundo educacional e parcerias locais</li>
-            <li>Q3 — Piloto da escola (turma inicial) e relatórios de gastos</li>
-            <li>Q4 — Escala e transparência: auditoria parcial dos repasses</li>
-          </ol>
-        </div>
-
-        <div class="wp-section card">
-          <h4>Governança & Transparência</h4>
-          <p style="color:var(--muted)">Relatórios trimestrais sobre o uso dos recursos. Idealmente auditoria por parceiro independente e atualizações regulares no canal oficial do projeto.</p>
-        </div>
-
-        <div class="wp-section card">
-          <h4>Riscos & Aviso Legal</h4>
-          <p style="color:var(--muted)">Criptomoedas são investimentos de alto risco. Este site não constitui conselho financeiro. Os recursos destinados ao projeto devem ser geridos com governança clara e com comunicação aberta à comunidade.</p>
-        </div>
-
-        <div class="card">
-          <h4>Whitepaper completo</h4>
-          <p style="color:var(--muted)">Você pode baixar uma versão em texto do whitepaper com um clique — use o botão abaixo para gerar o arquivo localmente.</p>
-          <div style="display:flex;gap:10px">
-            <button class="btn" id="downloadWp">Baixar Whitepaper (TXT)</button>
-            <button class="btn ghost" id="shareWp">Gerar link de compartilhamento</button>
-          </div>
-        </div>
-      </section>
-
-      <section id="buy" class="card" style="margin-top:18px">
-        <h3>Como comprar</h3>
-        <p style="color:var(--muted)">Atualmente o token está listado em <a href="https://pump.fun/coin/FZYS1CR4ryfe6kNkeL72Wr5haH7TwpxWxALTe9fXpump" target="_blank" rel="noopener">pump.fun</a>. Siga as instruções da plataforma escolhida e sempre verifique o contrato: <code>FZYS1CR4ryfe6kNkeL72Wr5haH7TwpxWxALTe9fXpump</code></p>
-      </section>
-
-      <section id="roadmap" class="card" style="margin-top:18px">
-        <h3>Roadmap detalhado</h3>
-        <p style="color:var(--muted)">(Visão estendida) — Preparar materiais pedagógicos, fechar parcerias com ONGs locais, estruturação administrativa e abertura de turmas específicas por região. Cronograma sujeito a ajustes.</p>
-      </section>
-
-    </main>
+      <div style="margin-top:12px" class="small">Endereço do contrato (BNB): <span style="font-family:monospace">0xF0d7D314cf86dddA3f957923a591A2b902c16c29</span></div>
+      <div class="small" style="margin-top:6px">Endereço / identificador (pump.fun / Solana): <span style="font-family:monospace">FZYS1CR4ryfe6kNkeL72Wr5haH7TwpxWxALTe9fXpump</span></div>
+    </section>
 
     <footer>
-      <div>
-        <strong>TrustGlobalBank (TGB)</strong>
-        <div style="color:var(--muted)">Missão: educação, tecnologia e oportunidades.</div>
-      </div>
-      <div class="socials">
-        <a href="https://x.com/TrustGlobalBank?t=vJ4_m4xVByzMuTiarrlalA&s=09" target="_blank" rel="noopener">X / Twitter</a>
-        <a href="https://t.me/TGBoficial1" target="_blank" rel="noopener">Telegrama</a>
-      </div>
+      <div>© <strong>TrustGlobalBank</strong> — Projeto com fins sociais. Confirme sempre contratos antes de negociar. Não é consultoria financeira.</div>
     </footer>
+  </main>
+
+  <!-- Modal whitepaper full -->
+  <div id="modalWP" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.7);padding:40px;overflow:auto">
+    <div style="max-width:900px;margin:0 auto;background:#061125;padding:22px;border-radius:12px">
+      <button style="float:right;background:transparent;border:none;color:#9fbfcf;font-size:18px" onclick="document.getElementById('modalWP').style.display='none'">Fechar ✕</button>
+      <h2>Whitepaper Completo — TrustGlobalBank (TGB)</h2>
+      <div style="margin-top:8px;color:#dff7f0;line-height:1.6">
+        <h3>Visão</h3>
+        <p>TrustGlobalBank é um token criado para financiar ações educacionais que garantam acesso a cursos práticos de tecnologia, arte, marketing e empreendedorismo para crianças sem condições financeiras. Buscamos criar impacto mensurável, com transparência e participação comunitária.</p>
+        <h3>Alocação (exemplo)</h3>
+        <ul>
+          <li>50% Liquidez inicial</li>
+          <li>25% Reserva para projetos sociais (escola)</li>
+          <li>15% Equipe e desenvolvimento</li>
+          <li>10% Marketing e parceiros</li>
+        </ul>
+        <h3>Roadmap</h3>
+        <ol>
+          <li>Lançamento do token e liquidez inicial — campanhas de conscientização.</li>
+          <li>Parcerias locais para estrutura física e professores.</li>
+          <li>Primeiros cursos pilotos e relatório de impacto no 6º mês.</li>
+          <li>Escala regional e programas contínuos.</li>
+        </ol>
+        <h3>Governança e transparência</h3>
+        <p>Relatórios públicos, votação da comunidade em decisões-chave e auditorias periódicas.</p>
+        <h3>Riscos</h3>
+        <p>Riscos de mercado inerentes a tokens; dependência de liquidez; necessidade de conformidade legal. Recomendamos consultar especialistas jurídicos e contábeis antes de operações significativas.</p>
+        <h3>Contato</h3>
+        <p>Twitter: <a href="https://x.com/TrustGlobalBank?t=vJ4_m4xVByzMuTiarrlalA&s=09">https://x.com/TrustGlobalBank</a> — Telegram: <a href="https://t.me/TGBoficial1">https://t.me/TGBoficial1</a></p>
+      </div>
+    </div>
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <script>
-    const contract = '0xF0d7D314cf86dddA3f957923a591A2b902c16c29';
-    document.getElementById('copyContract').addEventListener('click', async ()=>{
-      try{
-        await navigator.clipboard.writeText(contract);
-        alert('Contrato copiado para a área de transferência!');
-      }catch(e){
-        prompt('Copie manualmente o contrato:', contract);
-      }
+    // Copy contract
+    document.getElementById('copyBNB').addEventListener('click', function(){
+      const txt = document.getElementById('contractBNB').innerText;
+      navigator.clipboard.writeText(txt).then(()=>{
+        alert('Contrato copiado: ' + txt);
+      }).catch(()=>alert('Não foi possível copiar.'))
     });
 
-    // Whitepaper content for download
-    const fullWpText = `TrustGlobalBank (TGB) - Whitepaper (Versão TXT)\n\n
-Visão:\nTrustGlobalBank nasceu com o objetivo de usar a tecnologia blockchain para gerar recursos e financiar educação de qualidade para crianças em situação de vulnerabilidade.\n\n
-Tokenomics (resumo):\n- Nome: TrustGlobalBank (TGB)\n- Símbolo: TGB\n- Contrato: ${contract}\n- Onde comprar: https://pump.fun/coin/FZYS1CR4ryfe6kNkeL72Wr5haH7TwpxWxALTe9fXpump\n\nDistribuição sugerida (a ser formalizada pela equipe):\n- Liquidez\n- Fundo Educacional\n- Desenvolvimento\n- Marketing\n\nRoadmap (alto nível):\nQ1 - Lançamento do token, site e canais oficiais.\nQ2 - Formação do fundo educacional e primeiras parcerias.\nQ3 - Piloto da escola com turmas iniciais.\nQ4 - Escala, auditoria parcial e relatórios públicos.\n\nGovernança e Transparência:\nRelatórios trimestrais sobre uso dos recursos; auditoria por parceiro independente recomendada.\n\nRiscos:\nCriptomoedas são investimentos de alto risco. Este documento não é conselho financeiro.\n\nContato:\nX / Twitter: https://x.com/TrustGlobalBank?t=vJ4_m4xVByzMuTiarrlalA&s=09\nTelegrama: https://t.me/TGBoficial1\n`;
-
-    document.getElementById('downloadWp').addEventListener('click', ()=>{
-      const blob = new Blob([fullWpText], {type: 'text/plain;charset=utf-8'});
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url; a.download = 'TGB_whitepaper.txt';
-      document.body.appendChild(a); a.click(); a.remove();
-      URL.revokeObjectURL(url);
+    // Generate simple PDF whitepaper using jsPDF
+    document.getElementById('genPDF').addEventListener('click', async function(){
+      const {{ jsPDF }} = window.jspdf;
+      const doc = new jsPDF({unit:'pt',format:'a4'});
+      const title = 'Whitepaper - TrustGlobalBank (TGB)';
+      doc.setFontSize(18);
+      doc.text(title,40,60);
+      doc.setFontSize(12);
+      const body = `TrustGlobalBank (TGB) - Token com propósito social.\n\nVisão:\nTrustGlobalBank é um token criado para financiar uma escola que ofereça cursos de tecnologia, arte, marketing e empreendedorismo para crianças sem condições financeiras.\n\nContratos e Links:\nBNB contract: 0xF0d7D314cf86dddA3f957923a591A2b902c16c29\nPump.fun (Solana): FZYS1CR4ryfe6kNkeL72Wr5haH7TwpxWxALTe9fXpump\nTwitter: https://x.com/TrustGlobalBank\nTelegram: https://t.me/TGBoficial1\n\nRoadmap resumido e alocação: veja o whitepaper completo no site.`;
+      const split = doc.splitTextToSize(body, 520);
+      doc.text(split,40,100);
+      doc.save('Whitepaper_TrustGlobalBank_TGB.pdf');
     });
 
-    document.getElementById('shareWp').addEventListener('click', ()=>{
-      if(navigator.share){
-        navigator.share({title:'Whitepaper TGB',text:fullWpText});
-      }else{
-        alert('Compartilhamento não suportado no seu navegador. Você pode baixar o arquivo e enviar manualmente.');
-      }
+    // small accessibility: open modal with keyboard
+    document.addEventListener('keydown', function(e){
+      if(e.key==='w') document.getElementById('modalWP').style.display='block';
     });
   </script>
 </body>
